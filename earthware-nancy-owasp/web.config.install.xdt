@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0"?>
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
   <system.webServer>
-    <modules runAllManagedModulesForAllRequests="true" xdt:Transform="InsertIfMissing" >
+    <modules xdt:Transform="InsertIfMissing" >
       <add name="StripServerHeaders" type="earthware_nancy_owasp.Configurations.StripServerHeaders" xdt:Transform="Insert" />
     </modules>
-    <modules runAllManagedModulesForAllRequests="true" xdt:Transform="SetAttributes" />
     
     <httpProtocol xdt:Transform="InsertIfMissing"></httpProtocol>
     <httpProtocol>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>Earthware.Nancy.Owasp</id>
+    <version>1.0.0</version>
+    <authors>Earthware Ltd</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <language>en-GB</language>
+    <description>Adds in additional security and compression based on owasp and googles page insights recommendations. Includes stripping of server headers, gzip compression, adding headers and malicious request detection</description>
+    <copyright>earthware Ltd</copyright>
+    <iconUrl>http://nancyfx.org/nancy-nuget.png</iconUrl>
+    <projectUrl>https://github.com/Earthware/earthware-nancy-owasp</projectUrl>
+    <tags>earthware Nancy OWASP</tags>
+    <dependencies>
+      <dependency id="Nancy" version="1.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\earthware-nancy-owasp.*" target="lib" />
+    <file src="web.config.install.xdt" target="content" />
+    <file src="web.config.uninstall.xdt" target="content" />
+  </files>
+</package>
